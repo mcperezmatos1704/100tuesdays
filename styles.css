@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  background: #fafafa;
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.page {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.toggle-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggle {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #1a1a1a;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.toggle .to-en {
+  display: none;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+.lang-es {
+  display: none;
+}
+
+h1 {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+}
+
+p {
+  font-size: 1.05rem;
+  margin: 0 0 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #1a1a1a;
+  color: #fafafa;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.counter {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#lang-toggle:checked ~ .page .lang-en {
+  display: none;
+}
+
+#lang-toggle:checked ~ .page .lang-es {
+  display: block;
+}
+
+#lang-toggle:checked ~ .page .toggle .to-es {
+  display: none;
+}
+
+#lang-toggle:checked ~ .page .toggle .to-en {
+  display: inline;
+}
+
+@media (min-width: 40rem) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
