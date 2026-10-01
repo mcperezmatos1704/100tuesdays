@@ -19,3 +19,9 @@ Plain HTML and CSS. No framework, no build step.
 - Explain what you're about to do before you write files.
 - Never edit copy in copy.md or on the site. Copy is written by hand
   and changes only when explicitly asked.
+
+  ## Design
+- Palette (ColorBrewer PuOr): paper #F7F7F7, orange #F1A340, lavender #998EC3, plum ink #2A1F3D. All live as variables in :root in styles.css.
+- Headline: Newsreader (Google Fonts, approved by me). Body: system font.
+- Signature details: orange marker on Tuesday/martes, italic good life/buena vida, pill button with orange arrow, 100-dot counter.
+- Counter update: change -n+X in styles.css plus the number in both language blocks.
