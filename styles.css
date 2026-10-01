@@ -121,9 +121,29 @@ p {
 }
 
 .counter {
-  margin-top: 2.5rem;
+  margin: 2.5rem 0 0;
   font-size: 0.9rem;
-  color: #555;
+  color: var(--ink);
+}
+
+.dots {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 5px;
+  max-width: 20rem;
+  margin-top: 0.75rem;
+}
+
+.dots i {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1.5px solid var(--lavender);
+}
+
+/* ANSWERS: change the 0 to your count */
+.dots i:nth-child(-n+0) {
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 #lang-toggle:checked ~ .page .lang-en {
