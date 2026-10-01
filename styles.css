@@ -5,7 +5,7 @@
   --ink: #2A1F3D;
   --accent: var(--orange);
   --accent-text: #B5701A;;
-
+  --font-headline: "Newsreader", Georgia, serif;
 * {
   box-sizing: border-box;
 }
@@ -65,9 +65,11 @@ main {
 }
 
 h1 {
-  font-size: 1.8rem;
-  line-height: 1.3;
-  font-weight: 600;
+  font-family: var(--font-headline);
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.01em;
   margin: 0 0 1.5rem;
 }
 
@@ -110,7 +112,7 @@ p {
 
 @media (min-width: 40rem) {
   h1 {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
 }
 ::selection {
