@@ -113,3 +113,7 @@ p {
     font-size: 2.2rem;
   }
 }
+::selection {
+  background: var(--accent);
+  color: var(--ink);
+}
