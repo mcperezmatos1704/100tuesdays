@@ -3,6 +3,8 @@
   --paper: #F7F7F7;
   --lavender: #998EC3;
   --ink: #2A1F3D;
+  --accent: var(--orange);
+  --accent-text: #B5701A;;
 
 * {
   box-sizing: border-box;
