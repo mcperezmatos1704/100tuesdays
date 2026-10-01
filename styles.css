@@ -46,11 +46,26 @@ body {
 
 .toggle {
   display: inline-block;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid ;
-  border-radius: 0.25rem;
   font-size: 0.9rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--accent);
   cursor: pointer;
+}
+
+.toggle:hover {
+  border-bottom-color: var(--ink);
+}
+
+.toggle .to-en {
+  display: none;
+}
+
+#lang-toggle:checked ~ .page .toggle .to-es {
+  display: none;
+}
+
+#lang-toggle:checked ~ .page .toggle .to-en {
+  display: inline;
 }
 
 .toggle .to-en {
