@@ -81,12 +81,28 @@ p {
 
 .button {
   display: inline-block;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.6rem;
   background: var(--ink);
   color: var(--paper);
   text-decoration: none;
-  border-radius: 0.25rem;
+  border-radius: 999px;
   font-size: 1rem;
+}
+
+.button::after {
+  content: " →";
+  color: var(--accent);
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.button:hover::after {
+  transform: translateX(4px);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .counter {
