@@ -145,7 +145,7 @@ p {
 }
 
 /* ANSWERS: change the 0 to your count */
-.dots i:nth-child(-n+0) {
+.dots i:nth-child(-n+7) {
   background: var(--accent);
   border-color: var(--accent);
 }
